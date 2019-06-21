@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Developed by Raphael Nunes / User Assessment Form</title>
+    <link href="form.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- top header -->
+    <section id="top">
+    <div class="header">
+        <div id="circle"> <img class="logo" src="sitel.png" alt="logo"></div>
+        <h1>Rapha Nunes Web Developer</h1>
+    </div>
+    </section>
+    
+    <section class="overlay">
+    <!-- Form introduction -->
+    <div class="intro">
+        <h1 class="info">Important Information</h1>
+        <p class="info-P">The following questionnaire is designed to allow an individual DSE user to assess their workstation/s. Where a user has answered 'No' to any question in Part B, or provided details of any health effects in Part C, the employer should investigate and assess futher and/or make any workstation adjustments, if necessary.</p>
+        
+        <p class="info-P">Before completing this questionnaire please refer to question comments and figure 1 for guidance on DSE set up and seating position.</p>
+        
+        <p class="info-P">Sitel operates a hot desking policy and therefore these qustions should be applied to each of the stations you have worked at. Individual/isolated issues should be reported to your Team Manager.</p>
+        </div>
+        <br><br>
+       
+        
+        <!-- personal questions section-->
+       
+            <form action="results.html" target="_blank" method="GET"><!--  use POST for secured information but for the sake of this project I'm going to use GET-->
+             <fieldset class="personal">
+                 <legend><h4>Personal Information</h4></legend>
+                <label for="name">Name of Computer User:</label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="rdefa001" required >
+                <br><br>
+                <label for="department">Department:</label><br>
+                      <select id="department" required>
+                     <option>EHT After Sales</option>
+                     <option>Small Electricals</option>
+                     <option>Large Electricals</option>
+                     <option>Computers</option>
+                     <option>Grad Bay</option>
+                     <option>Human Resources</option>
+                 </select>
+             
+                <br><br>
+                <label for="location">Location of Workstation:</label>
+                <br>
+                 <select id="location" required>
+                     <option>Ground floor</option>
+                     <option>1st floor</option>
+                     <option>2nd floor</option>
+                     <option>3rd floor</option>
+                 </select>
+                <br><br>
+                <label for="date">Date of Assessment:</label>
+                <br>
+                <input type="date" name="date" id="date" placeholder="dd/mm/yyyy" required >
+                <br><br> 
+            </fieldset>
+           
+         <!-- End of personal section -->  
+       
+    
+        
+        <!-- Part A section-->
+        <h2>PART A</h2>
+        <fieldset class="part-a">
+            <legend><h4>General Information</h4></legend>
+          
+               <label for="time">How much time is spent on the display screen per day? (hours)</label>
+                <br>
+                <input type="number" name="time" id="time" min="0" max="12" required >
+           
+            </fieldset>
+        <!-- End of Part A --> 
+        <br><br>
+        <!-- Part B section-->
+        <h2>PART B</h2>
+        <fieldset class="part-b">
+            <legend><h4>Display Screen Equipment</h4></legend>
+             <br>
+            
+            <h4>Screen and Display:</h4>
+        
+            <span title="If this is an isolated issue, please report the asset number of the PC to your team manager *and move to a new computer. If this is a general issue please tick YES"> 1) Are the characters on screen clear and easy to read?</span>
+                
+            <input type="radio" name="q1" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q1" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                
+            <span> 2) Is the image on the screen free from flicker and movement?</span>
+                
+            <input type="radio" name="q2" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q2" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                
+            <span> 3) Are brightness and contrast controls adjustable?</span>
+                
+            <input type="radio" name="q3" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q3" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+            
+             <span> 4) Can the screen be swivelled and tilted?</span>
+                
+            <input type="radio" name="q4" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q4" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+            
+             <span> 5) Is the screen clean and free from glare and reflection?</span>
+                
+            <input type="radio" name="q5" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q5" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+             <span> 6) Is the top of the computer screen at or just below eye level?</span>
+                
+            <input type="radio" name="q6" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q6" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+            <h4>Keyboard:</h4>
+            
+            <span> 7) Is the keyboard separete from the screen?</span>
+                
+            <input type="radio" name="q7" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q7" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+            <span> 8) Can the Keyboard be tilted?</span>
+                
+            <input type="radio" name="q8" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q8" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+            <span> 9) Is the Keyboard easy to reach?</span>
+                
+            <input type="radio" name="q9" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q9" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+              <span> 10) Is there adequate space in front of the keyboard to rest your hands and wrists?</span>
+                
+            <input type="radio" name="q10" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q10" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+              <span> 11) Is the Keyboard free from glare?</span>
+                
+            <input type="radio" name="q11" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q11" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+              <span> 12) Are all characters clear and easy to read?</span>
+                
+            <input type="radio" name="q12" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q12" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+            <h4>Mouse or other Pointing Device:</h4>
+            
+             <span> 13) Is the device comfortable to use?</span>
+                
+            <input type="radio" name="q13" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q13" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+             <span> 14) Is the device suitable for right and left handed persons?</span>
+                
+            <input type="radio" name="q14" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q14" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+            
+            <span> 15) Can the device settings be adjusted to your personal preferences?</span>
+                
+            <input type="radio" name="q15" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q15" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+        </fieldset>
+                
+          <fieldset class="part-b2">
+            <legend><h4>Furniture</h4></legend>
+             <br>
+              
+             <h4>Desk:</h4> 
+                    
+             <span> 16) Is there adequate free space on the desk for all your work?</span>
+                
+            <input type="radio" name="q16" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q16" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 17) Can the device settings be adjusted to your personal preferences?</span>
+                
+            <input type="radio" name="q17" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q17" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 18) Is the layout of the work surface sufficient for all necessary equipment? e.g. computer, keyboard, telephone, printer etc.</span>
+                
+            <input type="radio" name="q18" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q18" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 19) Are all workstation equipment easy to reach?</span>
+                
+            <input type="radio" name="q19" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q19" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 20) Is there adequate space to adjust the position of the equipment in order to adopt a comfortable work posture?</span>
+                
+            <input type="radio" name="q20" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q20" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 21) Are work surfaces in a good and stable condition?</span>
+                
+            <input type="radio" name="q21" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q21" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 22) Is there adequate legroom under the desk?</span>
+                
+            <input type="radio" name="q22" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q22" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 23) Is the space under the desk clear of obstructions?</span>
+                
+            <input type="radio" name="q23" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q23" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <span> 24) Are surfaces free from glare and reflections?</span>
+                
+            <input type="radio" name="q24" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q24" id="no" value="no">
+            <label for="no">No</label>
+                <br><br> 
+              
+              <h4>Chair:</h4> 
+              
+               <span> 25) Is your chair stable? i.e. does it have five moveable castors?</span>
+                
+            <input type="radio" name="q25" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q25" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 26) Has your seat got suitable lumbar support?</span>
+                
+            <input type="radio" name="q26" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q26" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 27) Can the height of your seat be adjusted?</span>
+                
+            <input type="radio" name="q27" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q27" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 28) Can the height and tilt angle of the backrest be adjusted?</span>
+                
+            <input type="radio" name="q28" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q28" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 29) Does the seat rotate easily?</span>
+                
+            <input type="radio" name="q29" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q29" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 30) Are surfaces free from glare and reflections?</span>
+                
+            <input type="radio" name="q30" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q30" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 31) Are the seat arms detachable, if required?</span>
+                
+            <input type="radio" name="q31" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q31" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+              <h4>Ancillary Equipment</h4>
+              
+               <span> 32) Can you sit comfortably without the aid of a footrest?</span>
+                
+            <input type="radio" name="q32" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q32" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 33) Has a stable and adjustable document holder been provided(if needed)?</span>
+                
+            <input type="radio" name="q33" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q33" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 34) If you are required to simultaneously use the telephone and computer do you use a hands free speakerphone or a headset?</span>
+                
+            <input type="radio" name="q34" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q34" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+               <span> 35) Can your feet touch the floor or footrest?</span>
+                
+            <input type="radio" name="q35" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q35" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+              
+              </fieldset>
+                
+                
+                     <fieldset class="part-b3">
+            <legend><h4>Environment</h4></legend>
+             <br>
+              
+             <h4>Noise and Vibration:</h4> 
+                  
+            <span> 36) Are the temperature and humidity levels comfortable?</span>
+                
+            <input type="radio" name="q36" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q36" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                         
+             <span> 37) Is there sufficient ventilation that does not cause discomfort from draughts?</span>
+                
+            <input type="radio" name="q37" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q37" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+            
+             <span> 38) Are noise levels comfortable?</span>
+                
+            <input type="radio" name="q38" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q38" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                         
+             <span> 39) Is there sufficient workspace?</span>
+                
+            <input type="radio" name="q39" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q39" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                         
+             <span> 40) Is the lighting, including any specific task lighting, sufficient?</span>
+                
+            <input type="radio" name="q40" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q40" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                         
+             <span> 41) Are you able to control the amount of natural light with blinds or curtains?</span>
+                
+            <input type="radio" name="q41" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q41" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                         
+                </fieldset>
+                
+                <fieldset class="part-b3">
+            <legend><h4>Task Design and sofware</h4></legend>
+            <br> 
+                    
+            <span> 42) Is software suitable for the tasks?</span>
+                
+            <input type="radio" name="q42" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q42" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                    
+            <span> 43) Have you been trained to use the software?</span>
+                
+            <input type="radio" name="q43" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q43" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                    
+            <span> 44) Are tasks organiseed to avoid long periods of intensive activity?</span>
+                
+            <input type="radio" name="q44" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q44" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                    
+            <span> 45) Can you control the tasks? e.g. speed of recording data etc.</span>
+                
+            <input type="radio" name="q45" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q45" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                </fieldset>
+                
+             <fieldset class="part-b3">
+            <legend><h4>General Safety</h4></legend>
+            <br> 
+                 
+            <span> 46) Have you been informed of your entitlement to free eye and eye sight tests?</span>
+                
+            <input type="radio" name="q46" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q46" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                 
+             <span> 47) Are all electrical cables etc. in good condition and properly connected?</span>
+                
+            <input type="radio" name="q47" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q47" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                 
+            <span> 48) Are cables secure and tidy?</span>
+                
+            <input type="radio" name="q48" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q48" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                 
+            <span> 49) Is all equipment, furniture etc. safely positioned?</span>
+                
+            <input type="radio" name="q49" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q49" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                 
+            <span> 50) Do you have adequate rest breaks?</span>
+                
+            <input type="radio" name="q50" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q50" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                 
+            <span> 51) Are you able to take breaks at your discretion?</span>
+                
+            <input type="radio" name="q51" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q51" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                 
+            <span> 52) Can you leave your workstation during breaks?</span>
+                
+            <input type="radio" name="q52" id="yes" value="yes">
+            <label for="yes">Yes</label>
+                
+	        <input type="radio" name="q52" id="no" value="no">
+            <label for="no">No</label>
+                <br><br>
+                
+            </fieldset>
+        <!-- End of Part B --> 
+        <br><br>      
+       
+        <!-- Part C section-->
+        <h2>PART C</h2>
+        <p>Please include any comments that you would like to make regarding your workstation or its local environment. Also note any adverse health effects experienced, e.g. aches, pains, sensory loss ('tingling' or 'pins and needles')in your neck, back, shoulders, upper limbs, restricted joint movements or grip.</p>
+        <fieldset class="part-c">
+            <legend><h4>Leave a comment:</h4></legend>
+            <textarea class="textArea" name="message" rows="10" cols="150" placeholder="Type your message here"></textarea>
+            <p class="wordcount"><span class='characters'>400</span> characters remaining</p>
+       </fieldset>
+        <br><br>        
+      <input id="sub-btn" type="submit" value="Submit Form">  
+        </form>        
+    </section> 
+    <!-- End of overlay --> 
+    <div>
+      <footer>
+          <div class="copyrights">
+    <h6>Made in UK &copy; 2019 Raphael Nunes, All Rights Reserved.</h6>
+    </div>
+      </footer>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src='form.js'></script>
+</body>
+</html>

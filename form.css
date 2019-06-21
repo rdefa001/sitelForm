@@ -1,0 +1,135 @@
+*{
+box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Heveltica, sans-serif;
+    font-size: 18px;
+}
+
+#name, #department, #location, #date, #time {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+#circle{
+    background-color: #f3d8f3;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    opacity: 0.7;
+   
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    margin: 0;
+    position: center;
+}
+
+body {
+    background-image: url(https://i.postimg.cc/zv3nr2gR/alex-kotliarskyi-361081-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1bf2ea;
+    /*color:#343148;*/
+    /*background-color: #59CD90;*/
+    /*color: #3FA7D6;*/
+    margin: 25px;
+}
+
+ h1, h2, p {
+    margin: 30px 50px;   
+}
+
+#top {
+  /* background-color: rgba(255, 255, 255, 0.7); */ 
+    background: rgba(6, 21, 54, .7);
+    text-align: center;
+    border-radius: 5px;
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+
+.overlay {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+   background: rgba(6, 21, 54, .7);
+   border-radius: 5px;
+   margin: 50px;
+   padding-top: 10px;
+}
+
+.info:hover{
+    color:#f3d8f3;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.info-P{
+  display: none;
+}
+
+.personal, .part-a, .part-b,.part-b2,.part-b3, .part-c
+{
+    border-color:#f3d8f3;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.textArea{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.red{
+    color: red;
+}
+#sub-btn {
+   margin-left: 40%;
+   margin-bottom: 20px;  
+   width: 300px;
+   height: 35px;
+   border-radius: 4px;
+   font-size: 20px;
+   border: 1px solid #d9dddc;
+   cursor: pointer;
+}
+
+#sub-btn:hover{
+    background-color: #f3d8f3;
+}
+
+.copyrights{
+    text-align: center;
+}
+
+/* Results page   */
+
+.bodyresults {
+    background-color: black;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.divresults p {
+    color:rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 600px) {
+   
+   #sub-btn, #name, #department, #location, #date, #time, .textArea {
+        width: 100%;
+         margin-left: 0;
+ }
+.personal, .part-a, .part-b, .part-b2, .part-b3,.part-c {
+margin: 15px;
+    }
+}
